@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Individuell inlämningsuppgift</title>
-    <link rel="stylesheet" href="css/styles.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Montserrat:ital,wght@1,300&family=Open+Sans:ital,wght@1,300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
+<!--Header-->
+    <!--Navigation-->
+    <nav class="nav-container"> <!--Flexbox container-->
+        <img src="img/zocom-logo.svg" alt="ZoCom logo">
+        <ul class="nav-container__navbar">
+            <li><a href=# class="nav-container__list-items">HOME</a></li>
+            <li><a href=# class="nav-container__list-items">HOW IT WORKS</a></li>
+            <li><a href=# class="nav-container__list-items">FEATURES</a></li>
+            <li><a href=# class="nav-container__list-items">PRESS</a></li>
+            <li><a href=# class="nav-container__list-items">PRICING</a></li>
+            <li><a href=# class="nav-container__list-items">CONTACT</a></li>
+        </ul>
+        <button class="nav-container__btn">GET A QUOTE</button>
+        <article class="nav-container__hidden-menu">
+            <a href="#">
+                <img src="img/navicon.svg" alt="Hamburger menu">
+            </a>
+        </article>
+    </nav>
     
+    <!--Hero-->
+    <section class="hero-container">
+        <h1 class="hero-container__heading">Download our App</h1>
+        <p class="hero-container__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel eleifend diam, tempus accumsan neque. Praesent quis dolor.</p>
+        <article class="hero-container__btn">
+            <a href="#">
+                <img src="img/App store btn.svg" alt="App Store">
+            </a>
+            <a href="#">
+                <img src="img/Google play btn.svg" alt="Google Play">
+            </a>
+        </article>
+        <img src="img/phone.svg" alt="Phone" class="hero-container__img">
+    </section>
+
+    <!--Main-->
+    <main class="main-wrapper">
+        <section class="main-wrapper__main-container"> <!--Grid container-->
+            <h1 class="main-wrapper__heading">Our products</h1>
+            <article class="main-wrapper__card"> <!--Each article in this section is a flexbox container-->
+                <img src="img/image-outline large.svg" alt="Image Icon" class="main-wrapper__product-img">
+                <h3 class="main-wrapper__product-text">Green Cap</h3>
+                <p class="main-wrapper__product-price">US$29</p>
+            </article>
+            <article class="main-wrapper__card">
+                <img src="img/image-outline large.svg" alt="Image Icon" class="main-wrapper__product-img">
+                <h3 class="main-wrapper__product-text">Zara Shirt</h3>
+                <p class="main-wrapper__product-price">US$19.90</p>
+            </article>
+            <article class="main-wrapper__card">
+                <img src="img/image-outline large.svg" alt="Image Icon" class="main-wrapper__product-img">
+                <h3 class="main-wrapper__product-text">Nike Air</h3>
+                <p class="main-wrapper__product-price">US$34</p>
+            </article>
+            <article class="main-wrapper__card">
+                <img src="img/image-outline large.svg" alt="Image Icon" class="main-wrapper__product-img">
+                <h3 class="main-wrapper__product-text">Nerd tshirt</h3>
+                <p class="main-wrapper__product-price">US$9.99</p>
+            </article>
+            </article>
+            <article class="main-wrapper__card-large">
+                <h2 class="main-wrapper__collection">COLLECTION</h2>
+                <h4 class="main-wrapper__season">Summer 2021</h4>
+                <button class="main-wrapper__card-large-btn">CHECK IT OUT</button>
+            </article>
+            <article class="main-wrapper__card-large">
+                <h2 class="main-wrapper__collection">COLLECTION</h2>
+                <h4 class="main-wrapper__season">Summer 2021</h4>
+                <button class="main-wrapper__card-large-btn">CHECK IT OUT</button>
+            </article>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer-wrapper">
+        <section class="footer-wrapper__card-contact"> <!--Flexbox container-->
+            <h1 class="footer-wrapper__heading">Contanct Us</h1>
+            <h2 class="footer-wrapper__subheading">We'd love to hear from you</h2>
+            <form class="footer_wrapper__form"> <!--Flexboc container-->
+                <article class="footer-wrapper__form-list">
+                    <label for="fname">Full name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John Doe" class="footer-wrapper__form-input"/>
+                </article>
+                <article class="footer-wrapper__form-list">
+                    <label for="email">E-mail:</label><br>
+                    <input type="text" id="email" name="email" value="faux@gmail.com" class="footer-wrapper__form-input"/>
+                </article>
+                <article class="footer-wrapper__form-list">
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" value="Fejkallén 11 222 22 Stockholm" class="footer-wrapper__form-input"/>
+                </article>
+                <article class="footer-wrapper__form-list">   
+                    <label for="phone">Phone:</label><br>
+                    <input type="number" id="phone" name="phone" value="0701234567" class="footer-wrapper__form-input"/>
+                </article>
+                <input type="submit" value="Submit" class="footer-wrapper__form-btn"/>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>
