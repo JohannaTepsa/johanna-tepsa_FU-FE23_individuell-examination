@@ -6,10 +6,53 @@
 
 body {
     max-width: 1440px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif; /*Font imports*/
+    margin-inline: auto;
+}
+
+/*Global styles for font*/
+.heading {
+    font-size: 3.313rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.hero-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 0.80);
+}
+
+.card-heading,
+.card-contact-heading {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.card-text,
+.form-text {
+    font-size: 1rem;
     font-weight: 400;
     color: #222;
-    margin-inline: auto;
+}
+
+.card-large-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.card-large-text {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.card-large-btn-text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.60);
 }
 
 /*Animation*/
@@ -26,8 +69,8 @@ body {
     animation: click-color-change 0.3s ease;
 }
 
-/*Header*/
-/*Navigation*/
+/*HEADER Styles*/
+/*Navigation Styles*/
 .nav-container__list-items {
     color: #999;
     text-decoration: none;
@@ -72,7 +115,7 @@ body {
     display: none;
 }
 
-/*Mobile view*/
+/*Nav Mobile view/Media Queries*/
 @media screen and (max-width: 23.438rem) {
     .nav-container__navbar {
         display: none;
@@ -89,26 +132,22 @@ body {
     }
 }
 
-/*Hero*/
+/*Hero styles*/
 .hero-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    word-wrap: break-word;
     overflow: hidden;
     background-color: #EEE;
 }
 
 .hero-container__heading {
-    font-size: 3.5rem;
-    font-weight: 700;
     margin: 4rem 0 1rem 0;
 }
 
 .hero-container__text {
-    font-size: 1rem;
     line-height: 150%;
     max-width: 31.25rem;
     margin-bottom: 3rem;
@@ -120,7 +159,7 @@ body {
     margin-bottom: 2.5rem;
 }
 
-/*Mobile view*/
+/*Hero Mobile view/Media Queries*/
 @media screen and (max-width: 23.438rem) {
     .hero-container__heading {
         font-size: 2.25rem;
@@ -138,7 +177,7 @@ body {
     }
 }
 
-/*Main*/
+/*MAIN Styles*/
 .main-wrapper {
     background-color: #FFF;
 }
@@ -154,8 +193,6 @@ body {
 .main-wrapper__heading {
     justify-self: center;
     grid-column: 1 / 5;
-    font-size: 3.313rem;
-    font-weight: 700;
     margin-top: 6rem;
     margin-bottom: 3rem;
 }
@@ -178,14 +215,10 @@ body {
 }
 
 .main-wrapper__product-text {
-    font-size: 1.375rem;
-    font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .main-wrapper__product-price {
-    font-size: 1rem;
-    font-weight: 400;
     padding: 1 rem 0;
     margin-bottom: 1rem;
 }
@@ -203,25 +236,16 @@ body {
 }
 
 .main-wrapper__collection-text {
-    color: #FFF;
-    font-size: 2rem;
-    font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 .main-wrapper__season-text {
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 1.125rem;
-    font-weight: 400;
     margin-bottom: 1.5rem;
 }
 
 .main-wrapper__card-large-btn {
     width: 9.125rem;
     height: 2.5rem;
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 0.75rem;
-    font-weight: 500;
     letter-spacing: 0.013rem;
     background-color: #343332;
     border-radius: 3px;
@@ -229,7 +253,7 @@ body {
     cursor: pointer;
 }
 
-/*Mobile view*/
+/*Main Mobile view/Media Queries*/
 @media screen and (max-width: 23.438rem) {
     .main-wrapper__main-container {
         display: grid;
@@ -264,14 +288,6 @@ body {
         height: 3.756rem;
     }
 
-    .main-wrapper__product-text {
-        font-size: 1.375rem;
-    }
-
-    .main-wrapper__product-price {
-        font-size: 1rem;
-    }
-
     .main-wrapper__card-large {
         grid-column: auto / span 2;
         width: 21.438rem;
@@ -281,17 +297,9 @@ body {
     .main-wrapper__collection-text {
         font-size: 2.25rem;
     }
-
-    .main-wrapper__season-text {
-        font-size: 1.125rem;
-    }
-
-    .main-wrapper__card-large-btn {
-        font-size: 1rem;
-    }
 }
 
-/*Footer*/
+/*FOOTER Styles*/
 .footer-wrapper {
     background-image: url('../img/footer\ map\ bg\ large.svg');
     background-size: cover;
@@ -316,14 +324,10 @@ body {
 }
 
 .footer-wrapper__heading {
-    font-size: 3.5rem;
-    font-weight: 700;
     margin-bottom: 0.4rem;
 }
 
 .footer-wrapper__subheading {
-    font-size: 1.375rem;
-    font-weight: 700;
     color: rgba(35, 35, 35, 0.80);
     text-align: center;
     margin-bottom: 0.4rem;
@@ -336,8 +340,6 @@ body {
 }
 
 .footer-wrapper__form-list {
-    font-size: 1rem;
-    font-weight: 400;
     margin-bottom: 0.4rem;
 }
 
@@ -350,12 +352,11 @@ body {
     height: 2.5rem;
     border-radius: 3px;
     border: 1px solid #000;
-    font-weight: 500;
     background-color: #FFF;
     margin-top: 0.3rem;
 }
 
-/*Mobile view*/
+/*Footer Mobile view/Media Queries*/
 @media screen and (max-width: 23.438rem) {
     .footer-wrapper {
         display: flex;
@@ -377,17 +378,12 @@ body {
     .footer-wrapper__subheading {
         font-size: 1.125rem;
     }
-
-    .footer-wrapper__form-list {
-        font-size: 1rem;
-    }
-
-    .footer-wrapper__form-btn {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-    }
-
+    
     .footer-wrapper__form-input {
         width: 100%;
     }
+
+    .footer-wrapper__form-btn {
+        margin-top: 0.5rem;
+    } 
 }
